@@ -1,0 +1,42 @@
+{    
+    学生id: 抓取
+    学生名: Kano (Rong) Chen
+    头像:如果有就获取 url
+    年级: 在变量里直接定义
+    学校: 也在变量里直接定义
+
+    成绩摘要:{
+        课程id,
+        课程名称,
+        课程百分比,
+        课程 Grade（A+,B 等），
+        课程老师，
+        课程老师邮箱，
+        学期id，（每个学校的学期名都不一样，所以为了区分当前学期和历史学期，最好能有学期 ID）
+        学期，（Q1，Q2， F1, E1 等）
+        学生年级（11th,9th等）
+        抓取时间戳,
+    }
+    成绩详情：{
+        课程id:{
+            课程 id: 对应上面的课程 id
+            Due Data: 01/10/2017  
+            category : participation   
+            Assignment: 3 things about you      
+            Score: 5/5 
+            percent: 100%
+            Grd: A+ 
+        }        
+    }
+    考勤摘要：{
+        Absences: 6
+        Tardies: 2
+    }
+    考勤详情: {
+        Absences(对应上上面的摘要类型):{
+            描述:缺勤课程名
+            时间:缺勤时间
+            或者整个详情的html 或 table,入库按照长字段保存。
+        }
+    }
+}
