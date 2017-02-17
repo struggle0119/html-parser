@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html><head>
+<script type="text/javascript">var _rollbarConfig = {"accessToken":"d16cebea5d834224ad2e84d33f85501b","captureUncaught":true,"payload":{"environment":"production"}};</script>
+<script type="text/javascript">!function(r){function e(t){if(o[t])return o[t].exports;var n=o[t]={exports:{},id:t,loaded:!1};return r[t].call(n.exports,n,n.exports,e),n.loaded=!0,n.exports}var o={};return e.m=r,e.c=o,e.p="",e(0)}([function(r,e,o){"use strict";var t=o(1).Rollbar,n=o(2);_rollbarConfig.rollbarJsUrl=_rollbarConfig.rollbarJsUrl||"https://d37gvrvc0wt4s1.cloudfront.net/js/v1.9/rollbar.min.js";var a=t.init(window,_rollbarConfig),i=n(a,_rollbarConfig);a.loadFull(window,document,!_rollbarConfig.async,_rollbarConfig,i)},function(r,e){"use strict";function o(r){return function(){try{return r.apply(this,arguments)}catch(e){try{console.error("[Rollbar]: Internal error",e)}catch(o){}}}}function t(r,e,o){window._rollbarWrappedError&&(o[4]||(o[4]=window._rollbarWrappedError),o[5]||(o[5]=window._rollbarWrappedError._rollbarContext),window._rollbarWrappedError=null),r.uncaughtError.apply(r,o),e&&e.apply(window,o)}function n(r){var e=function(){var e=Array.prototype.slice.call(arguments,0);t(r,r._rollbarOldOnError,e)};return e.belongsToShim=!0,e}function a(r){this.shimId=++c,this.notifier=null,this.parentShim=r,this._rollbarOldOnError=null}function i(r){var e=a;return o(function(){if(this.notifier)return this.notifier[r].apply(this.notifier,arguments);var o=this,t="scope"===r;t&&(o=new e(this));var n=Array.prototype.slice.call(arguments,0),a={shim:o,method:r,args:n,ts:new Date};return window._rollbarShimQueue.push(a),t?o:void 0})}function l(r,e){if(e.hasOwnProperty&&e.hasOwnProperty("addEventListener")){var o=e.addEventListener;e.addEventListener=function(e,t,n){o.call(this,e,r.wrap(t),n)};var t=e.removeEventListener;e.removeEventListener=function(r,e,o){t.call(this,r,e&&e._wrapped?e._wrapped:e,o)}}}var c=0;a.init=function(r,e){var t=e.globalAlias||"Rollbar";if("object"==typeof r[t])return r[t];r._rollbarShimQueue=[],r._rollbarWrappedError=null,e=e||{};var i=new a;return o(function(){if(i.configure(e),e.captureUncaught){i._rollbarOldOnError=r.onerror,r.onerror=n(i);var o,a,c="EventTarget,Window,Node,ApplicationCache,AudioTrackList,ChannelMergerNode,CryptoOperation,EventSource,FileReader,HTMLUnknownElement,IDBDatabase,IDBRequest,IDBTransaction,KeyOperation,MediaController,MessagePort,ModalWindow,Notification,SVGElementInstance,Screen,TextTrack,TextTrackCue,TextTrackList,WebSocket,WebSocketWorker,Worker,XMLHttpRequest,XMLHttpRequestEventTarget,XMLHttpRequestUpload".split(",");for(o=0;o<c.length;++o)a=c[o],r[a]&&r[a].prototype&&l(i,r[a].prototype)}return e.captureUnhandledRejections&&(i._unhandledRejectionHandler=function(r){var e=r.reason,o=r.promise,t=r.detail;!e&&t&&(e=t.reason,o=t.promise),i.unhandledRejection(e,o)},r.addEventListener("unhandledrejection",i._unhandledRejectionHandler)),r[t]=i,i})()},a.prototype.loadFull=function(r,e,t,n,a){var i=function(){var e;if(void 0===r._rollbarPayloadQueue){var o,t,n,i;for(e=new Error("rollbar.js did not load");o=r._rollbarShimQueue.shift();)for(n=o.args,i=0;i<n.length;++i)if(t=n[i],"function"==typeof t){t(e);break}}"function"==typeof a&&a(e)},l=!1,c=e.createElement("script"),d=e.getElementsByTagName("script")[0],p=d.parentNode;c.crossOrigin="",c.src=n.rollbarJsUrl,c.async=!t,c.onload=c.onreadystatechange=o(function(){if(!(l||this.readyState&&"loaded"!==this.readyState&&"complete"!==this.readyState)){c.onload=c.onreadystatechange=null;try{p.removeChild(c)}catch(r){}l=!0,i()}}),p.insertBefore(c,d)},a.prototype.wrap=function(r,e){try{var o;if(o="function"==typeof e?e:function(){return e||{}},"function"!=typeof r)return r;if(r._isWrap)return r;if(!r._wrapped){r._wrapped=function(){try{return r.apply(this,arguments)}catch(e){throw e._rollbarContext=o()||{},e._rollbarContext._wrappedSource=r.toString(),window._rollbarWrappedError=e,e}},r._wrapped._isWrap=!0;for(var t in r)r.hasOwnProperty(t)&&(r._wrapped[t]=r[t])}return r._wrapped}catch(n){return r}};for(var d="log,debug,info,warn,warning,error,critical,global,configure,scope,uncaughtError,unhandledRejection".split(","),p=0;p<d.length;++p)a.prototype[d[p]]=i(d[p]);r.exports={Rollbar:a,_rollbarWindowOnError:t}},function(r,e){"use strict";r.exports=function(r,e){return function(o){if(!o&&!window._rollbarInitialized){var t=window.RollbarNotifier,n=e||{},a=n.globalAlias||"Rollbar",i=window.Rollbar.init(n,r);i._processShimQueue(window._rollbarShimQueue||[]),window[a]=i,window._rollbarInitialized=!0,t.processPayloads()}}}}]);</script>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Veracross Documents</title>
+  <meta name="ROBOTS" content="NOINDEX, NOFOLLOW, NOARCHIVE">
+
+  <style type="text/css">
+    @media screen {
+      body {background: #F3F1EC; margin: margin: 0 auto 15px auto; padding: 0; min-width: 807px;}
+      #container {margin: 10px auto 0 auto; width: 800px; background-color: #fff; box-shadow: 0 3px 10px #555; position: relative;}
+      #document {padding: 20px;}
+      #settings {display: none;}
+
+
+      .download_link { font-size: .5em; font-weight: normal; text-transform: uppercase}
+      a {text-decoration: none; border: none; color: #0047B3;}
+      a img {border: none;}
+      a:hover {color: #fff;}
+
+      #nav {width: 100%; line-height: 2.5em; background-color: #000; color: #000; position: relative; font-family: 'Segoe UI', 'Helvetica', Arial; background-color: #000}
+      #nav span {}
+      #nav a:link, #nav a:visited {color: #fff;}
+      #nav .settings {position: absolute; left: 10px; top: 0;}
+      #nav.back {position: absolute; left: 20px; top: 0;}
+      #nav .menu {position: absolute; left: 100px; top: 0;}
+      #nav .criteria {display: block; text-align: center;}
+      #nav .print {position: absolute; right: 20px; top: 0; bottom: 0; background: url('/assets/printer.png') 5px 50% no-repeat; padding: 0 5px 0 25px}
+      #nav .print:hover {background-color: #444;}
+      #nav .pdf {color: red}
+    }
+
+    @page {
+      size: US-Letter; margin: 20pt;
+    }
+
+    * {prince-bookmark-level: none}
+
+    body {
+      font-family: Arial; page-break-before: always; prince-bookmark-level: 1;  prince-bookmark-label: string(doctitle); prince-page-group: start; counter-reset: page 1;
+    }
+
+    title { string-set: doctitle content() }
+
+    pre {
+        white-space: pre-wrap;       /* css-3 */
+        white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+        white-space: -pre-wrap;      /* Opera 4-6 */
+        white-space: -o-pre-wrap;    /* Opera 7 */
+        word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    }
+
+    dl.dataform {margin: 0;}
+    dl.dataform dt {float: left; clear: left}
+    dl.dataform dt, dl.dataform dd {margin-top: 0; margin-bottom: 0;}
+
+    .clear:after {
+      content: ".";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden;
+    }
+
+
+      @media print{#help,.documentation,#average_note,#overall_grade_calculation,.average_note_link{display:none}}@page{@top-right{font-family:Arial;font-size:0.9em;content:"The John Carroll School"}}#document a img{border:0}#document #header h1{margin:4px 0}#document #header h2{font-size:1.2em;font-weight:normal;font-style:italic;margin:0 0 15px 0}#document #unpublished_scores_notice{width:100%;background-color:#B20000;color:white;text-align:center;padding:7px 0px;margin-top:10px;text-transform:uppercase;font-size:0.8em;font-weight:600}#document #unpublished_scores_notice i{margin-right:4px}#document #enrollment_info{position:relative;font-size:1.1em;width:98%}#document #enrollment_info .enrollment,#document #enrollment_info .overall_grade{float:left}#document #enrollment_info .enrollment{width:65%}#document #enrollment_info .overall_grade{width:30%;text-align:right;margin-top:10px}#document #enrollment_info span.ptd_grade{border-right:1px solid #ccc}#document #enrollment_info span.ptd_grade,#document #enrollment_info span.letter_grade{font-size:2em;text-align:center;background-color:#eee;padding:10px 10px;line-height:180%}#document #enrollment_info .overall_grade *{vertical-align:middle}#document #enrollment_info span,#document #enrollment_info p{margin:0;line-height:120%}#document .grade_level,#document .num_assignments{font-size:0.7em;color:#666}#document .assignment_grading_method{font-size:0.9em}#document #assignment_type_summary td,#document #assignment_type_summary th,#document .grades th{padding:4px}#document table thead th{font-size:0.9em;background-color:#eee;border-bottom:1px solid #ccc;border-right:1px solid #ccc;vertical-align:bottom}#document table tfoot th,#document tr.subtotal{text-align:left}#document #assignment_type_summary table{width:90%;margin-top:15px}#document #assignment_type_summary table tfoot th{border-top:1px solid #ccc}#document #assignment_type_summary .assignment_type{width:auto}#document #assignment_type_summary .weight,#document #assignment_type_summary .average,#document #assignment_type_summary .points_earned,#document #assignment_type_summary .points_possible{width:100px}#document #assignment_type_summary td.weight{vertical-align:top}#document .grades .spacer{height:10px}#document table.grades{width:100%;margin-top:15px}#document .grades td{padding:1px 3px;vertical-align:top}#document .due_date{width:60px;white-space:nowrap}#document .assignment{width:auto}#document .score{width:95px;font-size:0.9em;white-space:nowrap}#document .raw_score{width:60px}#document .max_score{width:60px}#document .grade{width:60px}#document .points_possible{width:60px}#document .points_earned{width:60px}#document .assignment_type{width:100px}#document .grades .assignment ul{font-size:12px;margin:5px 0 0 0;padding-left:30px}#document .grades .assignment li{margin-bottom:4px}#document .grades .score ul{list-style:none;font-size:0.9em !important;padding:0 0 0 15px;margin:5px 0 0 0}#document .grades .score li{text-align:right;border-bottom:1px dotted #333}#document .grades tr.group_header th{border:none}#document .grades td{border-bottom:1px solid #ddd}#document .grades tr.subtotal{page-break-before:avoid}#document .grades tr.subtotal td{border-bottom:none;font-weight:bold}#document .grades tr.bad_assignment{font-style:italic;color:red}#document table .number,#document table .date{text-align:right}#document .grades tr.group_header th{text-align:left;padding-left:74px}#document #dropped_assignments table{width:100%}#document #comment div{line-height:130%}#document h2{margin:10px 0 0 0;padding:0}#document .documentation{border:1px solid #ccc;background:#eee;padding:15px}#document .label{position:absolute;top:0;right:0;z-index:4}#document .graph{position:absolute;top:0;right:0;background-color:#eee}#document .criteria-grade-detail .group_header th{padding-top:20px}#document .criteria-grade-detail .score{text-align:right;width:120px}#document .criteria-grade-detail #criteria-assignments{margin-top:20px}#document .criteria-grade-detail #standard-assignments{margin-top:20px}#document .criteria-grade-detail .assignment_type{text-align:left;width:150px}#document .criteria-grade-detail .assignment{text-align:left}#document .criteria-grade-detail .criteria-grade{display:inline-block;background:#eee;padding:3px 8px;min-width:30px}#document .criteria-grade-detail .criteria-grade:empty:before{content:"\200b"}#document .criteria-grade-detail .criteria-possible{display:inline-block;background:#ddd;padding:3px 8px;min-width:30px}#document #help{float:right}#document #help a{text-decoration:none;color:orange;font-weight:bold;font-size:0.8em}#document a:hover{background-color:#fff}#document .tool-tip{color:#000;width:130px;z-index:13000}#document .tool-title{font-weight:bold;font-size:11px;margin:0;color:#fff;padding:8px 8px 4px;background:#999;border-bottom:1px solid #666}#document .tool-text{font-size:11px;padding:4px 8px 8px;background:#333;color:#fff}#document .header th{cursor:help}#document .grades tbody tr:hover{background-color:#ffc}#document .grades tbody tr.subtotal:hover,#document .grades tbody tr.group_header:hover{background-color:#fff}#document #overall_grade_calculation{position:absolute;right:0;top:4.5em;text-align:center;padding:3px;border:1px solid #ccc;background-color:#ffc}#document #overall_grade_calculation .denominator{border-top:1px solid #000}#document #assignment_type_summary,#document #assignments{clear:both}#document #average_note{color:green;float:right;font-size:12px;text-align:right;width:500px}#document .average_note_link{color:red;cursor:help;font-size:15px;font-weight:bold;vertial-align:super}#document #assignment_type_summary th.average{cursor:help}#document .ptd_grade{cursor:help}#document dt{float:left;clear:left;width:150px;font-weight:bold}#document dd{margin-left:150px}
+
+  body {page: grade_detail_36101;} @page grade_detail_36101 {  @bottom {content: "Printed: Feb 15 2017  7:58AM"} }
+
+  </style>
+
+  <style type="text/css" media="print">
+    #nav, #settings {display: none}
+  </style>
+
+    <link href="abcd_files/font-awesome.css" media="all" rel="stylesheet" type="text/css">
+
+
+    <script src="abcd_files/application-7753868df66e1df34e555bcaed814638.js" type="text/javascript"></script>
+    
+  <script src="abcd_files/jquery.js" type="text/javascript"></script>
+
+  <script type="text/javascript">
+
+    $(document).ready(function(){
+
+      // Setup sliding controls for documentation
+      $("#assignment_type_documentation_link").bind("click", function(e) {
+        e.preventDefault();
+        $("#assignment_type_documentation").slideToggle("fast");
+      });
+      $("#assignment_type_documentation").hide();
+
+      $("#assignments_documentation_link").bind("click", function(e) {
+        e.preventDefault();
+        $("#assignments_documentation").slideToggle("fast");
+      });
+      $("#assignments_documentation").hide();
+
+
+
+      // Overall grade calculation
+      $(".ptd_grade").hoverIntent(
+        function() { $("#overall_grade_calculation").fadeIn(); },
+        function() { $("#overall_grade_calculation").fadeOut(); }
+      );
+      $("#overall_grade_calculation").hide();
+
+      // Average note
+      $('#assignment_type_summary th.average').hoverIntent(
+        function() { $("#average_note").fadeIn(); },
+        function() { $("#average_note").fadeOut(); }
+      );
+      $("#average_note").hide();
+    });
+
+  </script>
+
+
+  <meta content="authenticity_token" name="csrf-param">
+<meta content="wqE/HdNzfAUznmX9GE7jT1MZw6ByBvcUe6fS9RhQbTs=" name="csrf-token">
+</head>
+<body id="page">
+  <div id="container">
+
+      <div id="nav">
+
+        <span class="menu">
+          
+        </span>
+
+        <span class="criteria">
+          &nbsp;
+        </span>
+
+          <a href="https://documents.veracross.com/jcs/grade_detail/36101.pdf?grading_period=8&amp;key=F718RzFiqRGvEv2O2zmDWzgw3MOsEv3Rq6Gm_PUZAzhm9US5pW8L1ysdhC-Mis_Szzk60D4o1jqP9DWMqvZtA22PPWZk-vALM2_YyNEacmBEUkY4Dtzjeo9f2_Ek3n6a5Wxk9EM-cQFoCpg80jMpTIPKTi9xBBIkWrryph9Yt3D3zr7Q0M8riMbZLrBgeHpoVRT-kfqQHw56pbgqVqoePQ%3D%3D" class="print" title="Download this document as a PDF"><span>Print to </span><span class="pdf">PDF</span></a>
+      </div>
+
+    <div id="document">
+      
+
+
+<div id="header">
+  <h1>Grade Detail - Quarter 3</h1>
+  <h2></h2>
+</div>
+
+<div id="enrollment_info" class="clear">
+  <div class="enrollment">
+    <p>
+      <strong>Leon Li</strong>
+      <span class="grade_level">- Grade 10</span>
+    </p>
+
+    <p><strong>English 2-101</strong> - Mr. Blair</p>
+
+    <p class="assignment_grading_method">Weighting by
+      Assignment Points
+    </p>
+  </div>
+
+  <div class="overall_grade">
+    <div>
+      <span class="ptd_grade">
+        88.00
+      </span>
+
+      <span class="letter_grade">
+        B
+      </span>
+    </div>
+  </div>
+
+  <div id="overall_grade_calculation" style="display: none;">
+
+
+  <div class="numerator">
+  <span class="assignment_type">
+      49.00
+    </span> + <span class="assignment_type">
+      215.00
+    </span> + <span class="assignment_type">
+      44.00
+    </span></div>
+
+  <div class="denominator">
+  <span class="assignment_type">
+      50.00
+    </span> + <span class="assignment_type">
+      250.00
+    </span> + <span class="assignment_type">
+      50.00
+    </span></div>
+
+
+</div>
+
+</div>
+
+
+<!-- Comments for Brentwood, Cushman -->
+
+<div id="assignment_type_summary">
+  <h2>Summary <a href="#" title="Help" id="assignment_type_documentation_link"><img src="abcd_files/help.png"></a></h2>
+
+  <div id="assignment_type_documentation" class="documentation" style="display: none;">
+    <p>Individual assignments are grouped into assignment types.  The 
+table below summarizes the student's progress in each assignment type.</p>
+
+    <dl>
+      <dt>Assignment Type</dt>
+      <dd>The number of assignments that have been given for this assignment type.</dd>
+
+
+      <dt>Points Earned</dt>
+      <dd>The sum of points earned for each assignment of this assignment type.</dd>
+
+      <dt>Points Possible</dt>
+      <dd>The sum of possible points for each assignment of this 
+assignment type.  Points are used to weight invidual assignments more or
+ less than other assignments.</dd>
+
+      <dt>Average</dt>
+      <dd>The weighted average of assignments for this assignment type. 
+ It is calculated by dividing the total points earned by the total 
+possible points.</dd>
+    </dl>
+  </div>
+
+  <table id="" class="data_table " cellspacing="0" cellpadding="0"><caption></caption><thead><tr><th class="description text" title="">Assignment Type</th><th class="points_earned number" title="">Points<br>Earned</th><th class="points_possible number" title="">Points<br>Possible</th><th class="average number" title="">Average <span class="average_note_link">*</span></th></tr></thead><tbody><tr class="row_0 "><td class="description text"><strong>Classwork</strong> <span class="num_assignments">(3 assignments)</span></td><td class="points_earned number">49.00</td><td class="points_possible number">50.00</td><td class="average number">98.00</td></tr><tr class="row_1 alt "><td class="description text"><strong>Quiz</strong> <span class="num_assignments">(3 assignments)</span></td><td class="points_earned number">215.00</td><td class="points_possible number">250.00</td><td class="average number">86.00</td></tr><tr class="row_2 "><td class="description text"><strong>Paper</strong> <span class="num_assignments">(1 assignments)</span></td><td class="points_earned number">44.00</td><td class="points_possible number">50.00</td><td class="average number">88.00</td></tr></tbody></table>
+
+
+  <div id="average_note" style="display: none;">
+    <p>* Note that a student's overall grade is not calculated by 
+averaging the assignment type averages.  Please click on the overall 
+grade to see the exact mathematical equation used to calculate the 
+student's grade.</p>
+  </div>
+
+</div>
+
+
+<div id="assignments">
+  <h2>Assignments <a href="#" title="Help" id="assignments_documentation_link"><img src="abcd_files/help.png"></a></h2>
+
+  <div id="assignments_documentation" class="documentation" style="display: none;">
+    <p>Below is a detailed descripion of each assignment for this grading period.
+    The assignments are grouped into their respective assignment types.
+    </p>
+
+    <dl>
+      <dt>Due Date</dt>
+      <dd>The date that this assignment was due.</dd>
+
+      <dt>Score</dt>
+      <dd>The score that this student earned on the assignment out of the best possible score.</dd>
+
+
+      <dt>Points Earned</dt>
+      <dd>Points are used to weight invidual assignments more or less 
+than other assignments.  The points earned is calculated by multiplying 
+the grade this student received on this assignment by the possible 
+points for this assignment.  (Grade × Points Possible)</dd>
+
+      <dt>Points Possible</dt>
+      <dd>The possible points represents how much this assignment is 
+worth relative to other assignments.  A teacher may decide to set a 
+different value for possible points than the maximum score for the 
+assignment in order to weight it more or less than other assignments.</dd>
+    </dl>
+  </div>
+
+  <table id="" class="data_table grades" cellspacing="0" cellpadding="0"><caption></caption><thead><tr><th class="due_date text" title="">Due Date</th><th class="assignment text" title="">Assignment</th><th class="score number" title="">Score</th><th class="grade number" title="">Grade</th><th class="points_earned number" title="">Points<br>Earned</th><th class="points_possible number" title="">Points<br>Possible</th></tr></thead><tbody class="classwork"><tr class="group_header"><th colspan="6">Classwork</th></tr><tr class="row_0 "><td class="due_date text">Jan 30</td><td class="assignment text">Revision Exercise - Highlighted Rough Draft </td><td class="score number"><span class="score-number">20 / 20</span> </td><td class="grade number">100.00%</td><td class="points_earned number">20.00</td><td class="points_possible number">20</td></tr><tr class="row_1 alt "><td class="due_date text">Feb 02</td><td class="assignment text">Shakespeare Notes </td><td class="score number"><span class="score-number">10 / 10</span> </td><td class="grade number">100.00%</td><td class="points_earned number">10.00</td><td class="points_possible number">10</td></tr><tr class="row_2 bad_assignment"><td class="due_date text">Feb 07</td><td class="assignment text">Drama Terms - Definitions </td><td class="score number"><span class="score-number">Late</span> </td><td class="grade number">95.00%</td><td class="points_earned number">19.00</td><td class="points_possible number">20</td></tr><tr class="subtotal"><td class="due_date text"></td><td class="assignment text"></td><td class="score number"></td><td class="grade number"></td><td class="points_earned number">49.00</td><td class="points_possible number">50</td></tr></tbody><tbody class="paper"><tr class="group_header"><th colspan="6">Paper</th></tr><tr class="row_0 "><td class="due_date text">Jan 26</td><td class="assignment text">Rough Draft - Research Paper </td><td class="score number"><span class="score-number">44 / 50</span> </td><td class="grade number">88.00%</td><td class="points_earned number">44.00</td><td class="points_possible number">50</td></tr><tr class="subtotal"><td class="due_date text"></td><td class="assignment text"></td><td class="score number"></td><td class="grade number"></td><td class="points_earned number">44.00</td><td class="points_possible number">50</td></tr></tbody><tbody class="quiz"><tr class="group_header"><th colspan="6">Quiz</th></tr><tr class="row_0 "><td class="due_date text">Jan 20</td><td class="assignment text">Quotations/MLA Citation Quiz </td><td class="score number"><span class="score-number">47 / 50</span> </td><td class="grade number">94.00%</td><td class="points_earned number">47.00</td><td class="points_possible number">50</td></tr><tr class="row_1 alt "><td class="due_date text">Feb 01</td><td class="assignment text">Shakespreare Background Quiz - Open Notes </td><td class="score number"><span class="score-number">68 / 100</span> </td><td class="grade number">68.00%</td><td class="points_earned number">68.00</td><td class="points_possible number">100</td></tr><tr class="row_2 "><td class="due_date text">Feb 10</td><td class="assignment text">Drama Terms - Quiz </td><td class="score number"><span class="score-number">100 / 100</span> </td><td class="grade number">100.00%</td><td class="points_earned number">100.00</td><td class="points_possible number">100</td></tr><tr class="subtotal"><td class="due_date text"></td><td class="assignment text"></td><td class="score number"></td><td class="grade number"></td><td class="points_earned number">215.00</td><td class="points_possible number">250</td></tr></tbody></table>
+
+</div>
+
+
+
+
+    </div>
+
+  </div>
+
+
+
+</body></html>

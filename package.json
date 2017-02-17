@@ -1,0 +1,36 @@
+{
+    "name": "html-parser",
+    "version": "v1.0.0",
+    "description": "登录 抓取数据",
+    "keywords": "html-parser",
+    "homepage": "https://github.com/struggle0119/html-parser",
+    "bugs": {
+        "url": "https://github.com/struggle0119/html-parser/issues"
+    },
+    "license": "ISC",
+    "author": {
+        "name": "struggle0119",
+        "email": "guojinli0119@126.com"
+    },
+    "main": "",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/struggle0119/html-parser.git"
+    },
+    "scripts": {
+        "watch": "node ./config/develop.js --option=watch",
+        "build": "node ./config/develop.js --option=build"
+    },
+    "dependencies": {
+    },
+    "devDependencies": {
+    },
+    "app": {
+        "indexFileName": "viewport.js",
+        "viewportPath": "./index.html",
+        "ignoreResolve": []
+    },
+    "engines": {
+        "node": ">=5.0.0"
+    }
+}

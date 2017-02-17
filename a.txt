@@ -1,0 +1,51 @@
+[36m[info][0m [phantom] Starting...
+[36m[info][0m [phantom] Running suite: 3 steps
+[32;1m[debug][0m [phantom] opening url: abc.html, HTTP GET
+[32;1m[debug][0m [phantom] Navigation requested: url=file:///mnt/hgfs/htdocs/html-parser/abc.html, type=Other, willNavigate=true, isMainFrame=true
+[32;1m[debug][0m [phantom] url changed to "file:///mnt/hgfs/htdocs/html-parser/abc.html"
+[32;1m[debug][0m [phantom] Automatically injected lib/jquery.js client side
+[32;1m[debug][0m [phantom] Successfully injected Casper client-side utilities
+[36m[info][0m [phantom] Step anonymous 2/3: done in 68229ms.
+[36m[info][0m [phantom] Step getItems 3/3: done in 68255ms.
+[32;1m[debug][0m [phantom] opening url: src/john-carroll/download/teacher/Free Mod-271.html, HTTP GET
+[32;1m[debug][0m [phantom] Navigation requested: url=file:///mnt/hgfs/htdocs/html-parser/src/john-carroll/download/teacher/Free%20Mod-271.html, type=Other, willNavigate=true, isMainFrame=true
+[32;1m[debug][0m [phantom] url changed to "file:///mnt/hgfs/htdocs/html-parser/src/john-carroll/download/teacher/Free%20Mod-271.html"
+[32;1m[debug][0m [phantom] Automatically injected lib/jquery.js client side
+[32;1m[debug][0m [phantom] Successfully injected Casper client-side utilities
+[36m[info][0m [phantom] Step anonymous 5/23: done in 68301ms.
+[32;1m[debug][0m [phantom] opening url: src/john-carroll/download/teacher/Advisory-232.html, HTTP GET
+[32;1m[debug][0m [phantom] Navigation requested: url=file:///mnt/hgfs/htdocs/html-parser/src/john-carroll/download/teacher/Advisory-232.html, type=Other, willNavigate=true, isMainFrame=true
+[32;1m[debug][0m [phantom] url changed to "file:///mnt/hgfs/htdocs/html-parser/src/john-carroll/download/teacher/Advisory-232.html"
+[32;1m[debug][0m [phantom] Automatically injected lib/jquery.js client side
+[32;1m[debug][0m [phantom] Successfully injected Casper client-side utilities
+[36m[info][0m [phantom] Step anonymous 7/23: done in 68351ms.
+[32;1m[debug][0m [phantom] opening url: src/john-carroll/download/teacher/Jazz Ensemble-101.html, HTTP GET
+[32;1m[debug][0m [phantom] Navigation requested: url=file:///mnt/hgfs/htdocs/html-parser/src/john-carroll/download/teacher/Jazz%20Ensemble-101.html, type=Other, willNavigate=true, isMainFrame=true
+[32;1m[debug][0m [phantom] url changed to "file:///mnt/hgfs/htdocs/html-parser/src/john-carroll/download/teacher/Jazz%20Ensemble-101.html"
+[32;1m[debug][0m [phantom] Automatically injected lib/jquery.js client side
+[32;1m[debug][0m [phantom] Successfully injected Casper client-side utilities
+[36m[info][0m [phantom] Step anonymous 9/23: done in 68420ms.
+[32;1m[debug][0m [phantom] opening url: src/john-carroll/download/score/Jazz Ensemble-101.html, HTTP GET
+[32;1m[debug][0m [phantom] Navigation requested: url=file:///mnt/hgfs/htdocs/html-parser/src/john-carroll/download/score/Jazz%20Ensemble-101.html, type=Other, willNavigate=true, isMainFrame=true
+[32;1m[debug][0m [phantom] url changed to "file:///mnt/hgfs/htdocs/html-parser/src/john-carroll/download/score/Jazz%20Ensemble-101.html"
+[32;1m[debug][0m [phantom] Navigation requested: url=https://documents.veracross.com/jcs/grade_detail/36098?grading_period=8&key=F718RzFiqRGvEv2O2zmDWzgw3MOsEv3Rq6Gm_PUZAzhm9US5pW8L1ysdhC-Mis_Szzk60D4o1jqP9DWMqvZtA22PPWZk-vALM2_YyNEacmBEUkY4Dtzjeo9f2_Ek3n6a5Wxk9EM-cQFoCpg80jMpTIPKTi9xBBIkWrryph9Yt3DGhsonjKlNWtqCh38kMls1NcGaoy31Zxd1y-dhRnFaiA==, type=Other, willNavigate=true, isMainFrame=false
+[32;1m[debug][0m [phantom] Automatically injected lib/jquery.js client side
+[32;1m[debug][0m [phantom] Successfully injected Casper client-side utilities
+src/john-carroll/download/score/quarter/Jazz Ensemble-101-4.html quarter4
+src/john-carroll/download/score/quarter/Jazz Ensemble-101-3.html quarter3
+src/john-carroll/download/score/quarter/Jazz Ensemble-101-2.html quarter2
+src/john-carroll/download/score/quarter/Jazz Ensemble-101-1.html quarter1
+[36m[info][0m [phantom] Step anonymous 11/25: done in 73694ms.
+[32;1m[debug][0m [phantom] opening url: src/john-carroll/download/score/quarter/Jazz Ensemble-101-4.html, HTTP GET
+[32;1m[debug][0m [phantom] Navigation requested: url=file:///mnt/hgfs/htdocs/html-parser/src/john-carroll/download/score/quarter/Jazz%20Ensemble-101-4.html, type=Other, willNavigate=true, isMainFrame=true
+[32;1m[debug][0m [phantom] url changed to "file:///mnt/hgfs/htdocs/html-parser/src/john-carroll/download/score/quarter/Jazz%20Ensemble-101-4.html"
+[32;1m[debug][0m [phantom] Automatically injected lib/jquery.js client side
+[32;1m[debug][0m [phantom] Successfully injected Casper client-side utilities
+https://portals.veracross.com/jcs/course/1244/website
+Jazz Ensemble-101
+https://portals.veracross.com/jcs/student/classes/36098/grade_detail
+99.22%
+Mr. Russell
+mailto:grussell@johncarroll.org
+[32;1m[debug][0m [phantom] Navigation requested: url=about:blank, type=Other, willNavigate=true, isMainFrame=true
+[32;1m[debug][0m [phantom] url changed to "about:blank"

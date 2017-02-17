@@ -1,0 +1,726 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Student Portal - Veracross</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="M82LfbEvb0zomj2D4Gvwf6IOLBqUpNTy3fS80CNyFoCv8eqVXBvOpX7R6drpVeghURv8UCT/migI3NfTmJiMag==" />
+
+    <link rel="stylesheet" media="all" href="/assets/family-98cc694dee61a3c43b6e6298569eaca30f746ae57b18ac092b2da97a8644f0b1.css" />
+<link rel="stylesheet" media="all" href="https://files.veracross.com/assets/file_uploader.css" />
+    
+
+
+    <script src="/assets/application-f9f5cbe84ae83d9848e2052f67cfd0b1e29e82b8ccab8366fda183fd4e64a3f6.js"></script>
+<script src="/assets/family-fe6fa75259a741c6cf167d5997f81ab3f56103a12af5ffb8c34101a7e24afe36.js"></script>
+
+    <script type="text/javascript">
+  Portals.client = "jcs";
+  Portals.clientRoute = "jcs";
+
+  Portals.schoolYear = 2016;
+  Portals.forkliftDomain = "https://files.veracross.com";
+  Portals.forkliftAuth = "eyJobWFjIjoiNDExZjY1ZmZmNDgxMWU0NGExNDBlOTI0ZmVhNjNlOTA5YWE3MGI5ZCIsImRhdGFiYXNlIjoiamNzX2RhdGFiYXNlIiwiZXhwaXJhdGlvbiI6IjIwMTctMDItMThUMDU6MDE6MDBaIiwidXNlcm5hbWUiOiJsaXlhbjE5QGpjcGF0cmlvdC5vcmcifQ==";
+
+  Portals.currentUser.username = "liyan19@jcpatriot.org";
+  Portals.currentUser.personPk = 16357;
+  Portals.currentUser.securityRoles = [];
+
+  Portals.context = "student";
+  Portals.env = "production";
+
+  window.Portals.app = new Portals.App({iPad: false});
+
+  $(function() {
+    Portals.app.domReady();
+  });
+</script>
+
+      <script type="text/javascript">
+    Portals.app.bind("ready", function() {
+      Portals.app.modules.student = new Portals.Family.Student.App({
+        el: '.container',
+        today: "2017-02-15",
+        studentId: "16357"
+      });
+    });
+  </script>
+
+  </head>
+
+  <body class="general-layout " ontouchstart="">
+    <div class='image-bg' style='background-image: url(https://assets.veracross.com/jcs/images/pond2.jpg);'></div>
+    <div class="layout-header light">
+  <div class="centered">
+
+    <div class="portal-title">
+      <a class="portal-name" href="/jcs/student">Student Portal</a>
+      <a class="school-name" href="/jcs/student">The John Carroll School</a>
+    </div>
+
+    <div class="primary-nav">
+
+      <div class="portal-module active"><a href="/jcs/student"><span>HOME</span><img height="24" width="24" src="/assets/primary_nav/light/nav-home-a9f857ed7dd203d54c9df69c7b8029a868a9d708a1ba2cb4f7ae1441c4fefcb6.png" alt="Nav home" /></a></div>
+
+      <div class="portal-module "><a href="/jcs/student/classes"><span>CLASSES</span><img height="24" width="24" src="/assets/primary_nav/light/nav-classes-34021945a9d82dbdcb6fde638e62853290c60a1e78b0ac124a0b5504028c37a4.png" alt="Nav classes" /></a></div>
+
+      <div class="portal-module "><a href="/jcs/student/planner"><span>ASSIGNMENTS</span><img height="24" width="24" src="/assets/primary_nav/light/nav-assignment-planner-641479d7c7cfc984e33451b8fc9a29b3eae8091e9e18c335d85ea3cb6b24ec24.png" alt="Nav assignment planner" /></a></div>
+
+        <div class="portal-module "><a href="/jcs/student/calendar/student"><span>CALENDAR</span><img height="24" width="24" src="/assets/primary_nav/light/nav-calendar-e65d055d23d6ff68f3c82fdc7501092e9fa162881293fac2909042dad30507d1.png" alt="Nav calendar" /></a></div>
+
+
+        <div class="portal-module "><a href="/jcs/student/directory"><span>DIRECTORY</span><img height="24" width="24" src="/assets/primary_nav/light/nav-directory-125d63a7acf4c34e5aedb0918ac9cdf29c0814425427703df64b8ad5ad46b433.png" alt="Nav directory" /></a></div>
+
+
+
+      <div class='portal-module my-account'>
+        <a href='#'>
+          <span>MY ACCOUNT</span>
+          <img height="24" width="24" src="/assets/primary_nav/light/nav-account-39b891e954cbc26fe282f2b380ee9a419f8efe57d6ecd4647aacf015ea9e284f.png" alt="Nav account" />
+        </a>
+        <ul class='dropdown'>
+          <li><a href="/jcs/logout">Log Out</a></li>
+
+            <li><a href="/jcs/account/change_password">Change Password</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    
+<div id="home" class="container">
+
+  <div class="secondary-nav">
+  <div class="center">
+    <a href="#" class="username">Leon Li</a>
+
+    <a class="active" href="/jcs/student">Homepage</a>
+
+      <a id="change password" href="/jcs/account/change_password">Change Password</a>
+
+    <a href="/jcs/logout">Log Out</a>
+
+    <!-- <a href="#" id="help-tutorial">Help</a> -->
+  </div>
+</div>
+
+
+  <div id="portal-homepage" class="content scrollable student-homepage">
+    <!-- notices -->
+    <div class="notices">
+
+    </div>
+
+    <!-- weekview -->
+    <div id="week-container">
+      <div id="week" class="homepage"></div>
+      <div id="calendar-loading" class="family-homepage"><p>Loading...</p></div>
+    </div>
+
+    <div class="news clear">
+
+      <!-- mailbox -->
+      <div class="inbox" id="mailbox">
+        <h4>RECENT MESSAGES</h4>
+        <div class="messages">
+          <ul></ul>
+          <div class='loading'><img src="/assets/spinner-11cb0d2487b625f222d62a2674e30f309f08111e905bdaa9cae18d092943d289.gif" alt="Spinner" /><span>Loading messages...</span></div>
+        </div>
+      </div>
+
+
+      <!-- portal links -->
+      <div class="school-links">
+        <h3>PORTAL LINKS</h3>
+<div class="school-links-list">
+  <ul>
+      <li class="vc"><a target="_blank" class="current-schedule" href="https://documents.veracross.com/jcs/schedule/16357?key=F718RzFiqRGvEv2O2zmDW3BnWEQrtS80PCiBcRJYvLv-9-elaRILe41xt3_aNu9v54d5PEKE9ayB99rh7bJfKfVankwKVR4xtgh2cXAXymmJZLOCFKRvXLDlMwTT29RRBho1QrjCkw_8diV2L4hA59mvF0iGt-OK8NFrxvxDPy2NuVKm8VM1F3DTs_RuUYga">Current Class Schedule &rarr;</a></li>
+  </ul>
+
+  <ul class="col-1">
+
+  </ul>
+
+  <ul class="col-2">
+  </ul>
+</div>
+
+      </div>
+    </div>
+
+    <div id="children-updates" class="children-and-updates clear student-portal">
+      <div class="tab-bar-placeholder">&nbsp;</div>
+      <div class="tab-bar">
+        <a href="#" class="active tab" id="class-list-tab" data-panel="children">Class List</a>
+        <a href="#" class="tab" id="recent-updates-tab" data-panel="activity">Recent Class Updates</a>
+        <a href="#" class="tab" id="student-reports-tab" data-panel="reports">Reports</a>
+
+
+          <a class="global-dropbox-button" data-new-window="dropbox-submit" href="/jcs/student/dropbox"><i class="fa fa-play-circle-o"></i> Submit Assignments</a>
+
+          <a class="view-assignment-planner" href="/jcs/student/planner">view Assignment Planner &rarr;</a>
+
+        <div class="filter">
+          <span href="#">FILTER UPDATES &#9660;</span>
+          <div class="popover">
+            <div class="inner">
+              <label><input type="checkbox" checked="checked" value="type-3"/> Attendance</label>
+              <label><input type="checkbox" checked="checked" value="type-21"/> New Resource</label>
+              <label><input type="checkbox" checked="checked" value="type-22"/> New Link</label>
+              <label><input type="checkbox" checked="checked" value="type-30"/> Assignment Due</label>
+              <label><input type="checkbox" checked="checked" value="type-31"/> New Assignment</label>
+              <label><input type="checkbox" checked="checked" value="type-32"/> Grade Update</label>
+              <label><input type="checkbox" checked="checked" value="type-33"/> New Gallery</label>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="tab-container">
+        <div id="children" class="tab-panel active">
+
+          <div id="child-16357" class="child" style="display: block;">
+
+            <div class="class-status-filters">
+              <a href="#" class='class-status active' data-status='active'>Active</a>
+              <a href="#" class='class-status' data-status='future'>Future</a>
+              <a href="#" class='class-status' data-status='past'>Past</a>
+            </div>
+
+            <div class="classes">
+
+
+    <ul class="class-list clear " data-allow-assignments="1">
+
+      <li data-status="active">
+        <div class="course">
+          <div class="title">
+
+              <a title="view class website" class="class-name" href="/jcs/course/1461/website">English 2-101</a>
+
+            <span class="teacher-name">Mr. Blair</span>
+
+          </div>
+
+          <div class="meeting-time">
+            <span class="no-meeting-time"><i class="fa fa-clock-o"></i> not scheduled today</span>
+          </div>
+
+          <div class="links">
+              <a title="view class website" class="class-link class-website" href="/jcs/course/1461/website">website</a> &middot;
+              <a class="class-link class-assignments" href="/jcs/course/1461/website/calendar">calendar</a> &middot;
+              <a class="class-link class-directory" href="/jcs/course/1461/website/directory">directory</a>
+          </div>
+
+        </div>
+
+        <div class="course-notifications">
+          <a class="calculated-grade" title="view Grade Detail report" href="/jcs/student/classes/36101/grade_detail"><span class="letter-grade"></span><span class="numeric-grade">88.0%</span></a>
+          <a class="notifications no-notifications" title="view assignment updates" href="/jcs/student/classes/36101?filter=updates"><span class="notifications-count">0</span><span class="notifications-label">new updates</span></a>
+          <a class="view-assignments" href="/jcs/student/classes/36101">view all assignments</a>
+        </div>
+
+        <div class="course-content">
+        </div>
+
+      </li>
+      <li data-status="active">
+        <div class="course">
+          <div class="title">
+
+              <a title="view class website" class="class-name" href="/jcs/course/1613/website">Honors Financial Literacy-201</a>
+
+            <span class="teacher-name">Mr. Hollin</span>
+
+          </div>
+
+          <div class="meeting-time">
+            <span class="meets-today" title="Meets Today"><i class="fa fa-clock-o"></i><strong>Red67</strong>: 10:15 AM - 11:10 AM</span>
+          </div>
+
+          <div class="links">
+              <a title="view class website" class="class-link class-website" href="/jcs/course/1613/website">website</a> &middot;
+              <a class="class-link class-assignments" href="/jcs/course/1613/website/calendar">calendar</a> &middot;
+              <a class="class-link class-directory" href="/jcs/course/1613/website/directory">directory</a>
+          </div>
+
+        </div>
+
+        <div class="course-notifications">
+          <a class="calculated-grade" title="view Grade Detail report" href="/jcs/student/classes/36102/grade_detail"><span class="letter-grade"></span><span class="numeric-grade">89.12%</span></a>
+          <a class="notifications no-notifications" title="view assignment updates" href="/jcs/student/classes/36102?filter=updates"><span class="notifications-count">0</span><span class="notifications-label">new updates</span></a>
+          <a class="view-assignments" href="/jcs/student/classes/36102">view all assignments</a>
+        </div>
+
+        <div class="course-content">
+        </div>
+
+      </li>
+      <li data-status="past">
+        <div class="course">
+          <div class="title">
+
+              <a title="view class website" class="class-name" href="/jcs/course/1014/website">Honors US Government-101</a>
+
+            <span class="teacher-name">Mr. Johnson</span>
+
+          </div>
+
+          <div class="meeting-time">
+            <span class="no-meeting-time"><i class="fa fa-clock-o"></i> not scheduled today</span>
+          </div>
+
+          <div class="links">
+              <a title="view class website" class="class-link class-website" href="/jcs/course/1014/website">website</a> &middot;
+              <a class="class-link class-assignments" href="/jcs/course/1014/website/calendar">calendar</a> &middot;
+              <a class="class-link class-directory" href="/jcs/course/1014/website/directory">directory</a>
+          </div>
+
+        </div>
+
+        <div class="course-notifications">
+          <span class="hide-grade">&nbsp;</span>
+          <a class="notifications no-notifications" title="view assignment updates" href="/jcs/student/classes/36093?filter=updates"><span class="notifications-count">0</span><span class="notifications-label">new updates</span></a>
+          <a class="view-assignments" href="/jcs/student/classes/36093">view all assignments</a>
+        </div>
+
+        <div class="course-content">
+        </div>
+
+      </li>
+      <li data-status="active">
+        <div class="course">
+          <div class="title">
+
+              <a title="view class website" class="class-name" href="/jcs/course/1053/website">Honors French 2-101</a>
+
+            <span class="teacher-name">Mrs. Ferry</span>
+
+          </div>
+
+          <div class="meeting-time">
+            <span class="meets-today" title="Meets Today"><i class="fa fa-clock-o"></i><strong>Gray67</strong>: 11:50 AM - 12:45 PM</span>
+          </div>
+
+          <div class="links">
+              <a title="view class website" class="class-link class-website" href="/jcs/course/1053/website">website</a> &middot;
+              <a class="class-link class-assignments" href="/jcs/course/1053/website/calendar">calendar</a> &middot;
+              <a class="class-link class-directory" href="/jcs/course/1053/website/directory">directory</a>
+          </div>
+
+        </div>
+
+        <div class="course-notifications">
+          <a class="calculated-grade" title="view Grade Detail report" href="/jcs/student/classes/36094/grade_detail"><span class="letter-grade"></span><span class="numeric-grade">92.88%</span></a>
+          <a class="notifications no-notifications" title="view assignment updates" href="/jcs/student/classes/36094?filter=updates"><span class="notifications-count">0</span><span class="notifications-label">new updates</span></a>
+          <a class="view-assignments" href="/jcs/student/classes/36094">view all assignments</a>
+        </div>
+
+        <div class="course-content">
+        </div>
+
+      </li>
+      <li data-status="active">
+        <div class="course">
+          <div class="title">
+
+              <a title="view class website" class="class-name" href="/jcs/course/1107/website">Honors Chemistry-101</a>
+
+            <span class="teacher-name">Mr. Lawler</span>
+
+          </div>
+
+          <div class="meeting-time">
+            <span class="meets-today" title="Meets Today"><i class="fa fa-clock-o"></i><strong>Blue67</strong>: 1:50 PM - 2:45 PM</span>
+          </div>
+
+          <div class="links">
+              <a title="view class website" class="class-link class-website" href="/jcs/course/1107/website">website</a> &middot;
+              <a class="class-link class-assignments" href="/jcs/course/1107/website/calendar">calendar</a> &middot;
+              <a class="class-link class-directory" href="/jcs/course/1107/website/directory">directory</a>
+          </div>
+
+        </div>
+
+        <div class="course-notifications">
+          <a class="calculated-grade" title="view Grade Detail report" href="/jcs/student/classes/36095/grade_detail"><span class="letter-grade"></span><span class="numeric-grade">100.0%</span></a>
+          <a class="notifications no-notifications" title="view assignment updates" href="/jcs/student/classes/36095?filter=updates"><span class="notifications-count">0</span><span class="notifications-label">new updates</span></a>
+          <a class="view-assignments" href="/jcs/student/classes/36095">view all assignments</a>
+        </div>
+
+        <div class="course-content">
+        </div>
+
+      </li>
+      <li data-status="past">
+        <div class="course">
+          <div class="title">
+
+              <a title="view class website" class="class-name" href="/jcs/course/1121/website">Introduction to Engineering-101</a>
+
+            <span class="teacher-name">Mrs. Baker</span>
+
+          </div>
+
+          <div class="meeting-time">
+            <span class="no-meeting-time"><i class="fa fa-clock-o"></i> not scheduled today</span>
+          </div>
+
+          <div class="links">
+              <a title="view class website" class="class-link class-website" href="/jcs/course/1121/website">website</a> &middot;
+              <a class="class-link class-assignments" href="/jcs/course/1121/website/calendar">calendar</a> &middot;
+              <a class="class-link class-directory" href="/jcs/course/1121/website/directory">directory</a>
+          </div>
+
+        </div>
+
+        <div class="course-notifications">
+          <span class="hide-grade">&nbsp;</span>
+          <a class="notifications no-notifications" title="view assignment updates" href="/jcs/student/classes/36096?filter=updates"><span class="notifications-count">0</span><span class="notifications-label">new updates</span></a>
+          <a class="view-assignments" href="/jcs/student/classes/36096">view all assignments</a>
+        </div>
+
+        <div class="course-content">
+        </div>
+
+      </li>
+      <li data-status="active">
+        <div class="course">
+          <div class="title">
+
+              <a title="view class website" class="class-name" href="/jcs/course/1706/website">Research Methodologies-201</a>
+
+            <span class="teacher-name">Mr. Monaghan</span>
+
+          </div>
+
+          <div class="meeting-time">
+            <span class="no-meeting-time"><i class="fa fa-clock-o"></i> not scheduled today</span>
+          </div>
+
+          <div class="links">
+              <a title="view class website" class="class-link class-website" href="/jcs/course/1706/website">website</a> &middot;
+              <a class="class-link class-assignments" href="/jcs/course/1706/website/calendar">calendar</a> &middot;
+              <a class="class-link class-directory" href="/jcs/course/1706/website/directory">directory</a>
+          </div>
+
+        </div>
+
+        <div class="course-notifications">
+          <a class="calculated-grade" title="view Grade Detail report" href="/jcs/student/classes/36105/grade_detail"><span class="letter-grade"></span><span class="numeric-grade">76.3%</span></a>
+          <a class="notifications no-notifications" title="view assignment updates" href="/jcs/student/classes/36105?filter=updates"><span class="notifications-count">0</span><span class="notifications-label">new updates</span></a>
+          <a class="view-assignments" href="/jcs/student/classes/36105">view all assignments</a>
+        </div>
+
+        <div class="course-content">
+        </div>
+
+      </li>
+      <li data-status="active">
+        <div class="course">
+          <div class="title">
+
+              <a title="view class website" class="class-name" href="/jcs/course/1149/website">Honors Pre-Calculus-102</a>
+
+            <span class="teacher-name">Mr. Appleby</span>
+
+          </div>
+
+          <div class="meeting-time">
+            <span class="meets-today" title="Meets Today"><i class="fa fa-clock-o"></i><strong>Rose56</strong>: 8:00 AM - 8:55 AM</span>
+          </div>
+
+          <div class="links">
+              <a title="view class website" class="class-link class-website" href="/jcs/course/1149/website">website</a> &middot;
+              <a class="class-link class-assignments" href="/jcs/course/1149/website/calendar">calendar</a> &middot;
+              <a class="class-link class-directory" href="/jcs/course/1149/website/directory">directory</a>
+          </div>
+
+        </div>
+
+        <div class="course-notifications">
+          <a class="calculated-grade" title="view Grade Detail report" href="/jcs/student/classes/36097/grade_detail"><span class="letter-grade"></span><span class="numeric-grade">86.88%</span></a>
+          <a class="notifications no-notifications" title="view assignment updates" href="/jcs/student/classes/36097?filter=updates"><span class="notifications-count">0</span><span class="notifications-label">new updates</span></a>
+          <a class="view-assignments" href="/jcs/student/classes/36097">view all assignments</a>
+        </div>
+
+        <div class="course-content">
+            <a class="upcoming-assignment " rel="facebox" href="/jcs/assignment/37086"><span class="due-date"><span class="day">FRI</span><span class="date">Feb 17</span></span><span class="assignment-type">Test</span></a>
+        </div>
+
+      </li>
+      <li data-status="past">
+        <div class="course">
+          <div class="title">
+
+              <a title="view class website" class="class-name" href="/jcs/course/1623/website">The Mission of Jesus-104</a>
+
+            <span class="teacher-name">Mr. Vierheller</span>
+
+          </div>
+
+          <div class="meeting-time">
+            <span class="no-meeting-time"><i class="fa fa-clock-o"></i> not scheduled today</span>
+          </div>
+
+          <div class="links">
+              <a title="view class website" class="class-link class-website" href="/jcs/course/1623/website">website</a> &middot;
+              <a class="class-link class-assignments" href="/jcs/course/1623/website/calendar">calendar</a> &middot;
+              <a class="class-link class-directory" href="/jcs/course/1623/website/directory">directory</a>
+          </div>
+
+        </div>
+
+        <div class="course-notifications">
+          <span class="hide-grade">&nbsp;</span>
+          <a class="notifications no-notifications" title="view assignment updates" href="/jcs/student/classes/36103?filter=updates"><span class="notifications-count">0</span><span class="notifications-label">new updates</span></a>
+          <a class="view-assignments" href="/jcs/student/classes/36103">view all assignments</a>
+        </div>
+
+        <div class="course-content">
+        </div>
+
+      </li>
+      <li data-status="active">
+        <div class="course">
+          <div class="title">
+
+              <a title="view class website" class="class-name" href="/jcs/course/1655/website">the Mission of the Church-203</a>
+
+            <span class="teacher-name">Mr. Vierheller</span>
+
+          </div>
+
+          <div class="meeting-time">
+            <span class="meets-today" title="Meets Today"><i class="fa fa-clock-o"></i><strong>Yellow67</strong>: 9:00 AM - 9:55 AM</span>
+          </div>
+
+          <div class="links">
+              <a title="view class website" class="class-link class-website" href="/jcs/course/1655/website">website</a> &middot;
+              <a class="class-link class-assignments" href="/jcs/course/1655/website/calendar">calendar</a> &middot;
+              <a class="class-link class-directory" href="/jcs/course/1655/website/directory">directory</a>
+          </div>
+
+        </div>
+
+        <div class="course-notifications">
+          <a class="calculated-grade" title="view Grade Detail report" href="/jcs/student/classes/36104/grade_detail"><span class="letter-grade"></span><span class="numeric-grade">75.0%</span></a>
+          <a class="notifications no-notifications" title="view assignment updates" href="/jcs/student/classes/36104?filter=updates"><span class="notifications-count">0</span><span class="notifications-label">new updates</span></a>
+          <a class="view-assignments" href="/jcs/student/classes/36104">view all assignments</a>
+        </div>
+
+        <div class="course-content">
+        </div>
+
+      </li>
+      <li data-status="past">
+        <div class="course">
+          <div class="title">
+
+              <a title="view class website" class="class-name" href="/jcs/course/1200/website">Intro to Architecture-101</a>
+
+            <span class="teacher-name">Mrs. Collins</span>
+
+          </div>
+
+          <div class="meeting-time">
+            <span class="no-meeting-time"><i class="fa fa-clock-o"></i> not scheduled today</span>
+          </div>
+
+          <div class="links">
+              <a title="view class website" class="class-link class-website" href="/jcs/course/1200/website">website</a> &middot;
+              <a class="class-link class-assignments" href="/jcs/course/1200/website/calendar">calendar</a> &middot;
+              <a class="class-link class-directory" href="/jcs/course/1200/website/directory">directory</a>
+          </div>
+
+        </div>
+
+        <div class="course-notifications">
+          <span class="hide-grade">&nbsp;</span>
+          <a class="notifications no-notifications" title="view assignment updates" href="/jcs/student/classes/40284?filter=updates"><span class="notifications-count">0</span><span class="notifications-label">new updates</span></a>
+          <a class="view-assignments" href="/jcs/student/classes/40284">view all assignments</a>
+        </div>
+
+        <div class="course-content">
+        </div>
+
+      </li>
+      <li data-status="active">
+        <div class="course">
+          <div class="title">
+
+              <a title="view class website" class="class-name" href="/jcs/course/1244/website">Jazz Ensemble-101</a>
+
+            <span class="teacher-name">Mr. Russell</span>
+
+          </div>
+
+          <div class="meeting-time">
+            <span class="meets-today" title="Meets Today"><i class="fa fa-clock-o"></i><strong>AfterSchool01</strong>: 3:00 PM - 3:40 PM</span>
+          </div>
+
+          <div class="links">
+              <a title="view class website" class="class-link class-website" href="/jcs/course/1244/website">website</a> &middot;
+              <a class="class-link class-assignments" href="/jcs/course/1244/website/calendar">calendar</a> &middot;
+              <a class="class-link class-directory" href="/jcs/course/1244/website/directory">directory</a>
+          </div>
+
+        </div>
+
+        <div class="course-notifications">
+          <a class="calculated-grade" title="view Grade Detail report" href="/jcs/student/classes/36098/grade_detail"><span class="letter-grade"></span><span class="numeric-grade">99.22%</span></a>
+          <a class="notifications " title="view assignment updates" href="/jcs/student/classes/36098?filter=updates"><span class="notifications-count">1</span><span class="notifications-label">new updates</span></a>
+          <a class="view-assignments" href="/jcs/student/classes/36098">view all assignments</a>
+        </div>
+
+        <div class="course-content">
+            <a class="upcoming-assignment today" rel="facebox" href="/jcs/assignment/36830"><span class="due-date"><span class="day">WED</span><span class="date">Today</span></span><span class="assignment-type">Classwork</span></a>
+            <a class="upcoming-assignment " rel="facebox" href="/jcs/assignment/36649"><span class="due-date"><span class="day">THU</span><span class="date">Feb 16</span></span><span class="assignment-type">Homework</span></a>
+            <a class="upcoming-assignment " rel="facebox" href="/jcs/assignment/36650"><span class="due-date"><span class="day">THU</span><span class="date">Feb 16</span></span><span class="assignment-type">Homework</span></a>
+        </div>
+
+      </li>
+      <li data-status="active">
+        <div class="course">
+          <div class="title">
+
+              <a title="view class website" class="class-name" href="/jcs/course/1380/website">Advisory-232</a>
+
+            <span class="teacher-name">Mr. Johnson</span>
+
+          </div>
+
+          <div class="meeting-time">
+            <span class="meets-today" title="Meets Today"><i class="fa fa-clock-o"></i><strong>ADV3</strong>: 10:00 AM - 10:10 AM</span>
+          </div>
+
+          <div class="links">
+              <a title="view class website" class="class-link class-website" href="/jcs/course/1380/website">website</a> &middot;
+              <a class="class-link class-assignments" href="/jcs/course/1380/website/calendar">calendar</a> &middot;
+              <a class="class-link class-directory" href="/jcs/course/1380/website/directory">directory</a>
+          </div>
+
+        </div>
+
+        <div class="course-notifications">
+          <span class="hide-grade">&nbsp;</span>
+          <a class="notifications no-notifications" title="view assignment updates" href="/jcs/student/classes/36100?filter=updates"><span class="notifications-count">0</span><span class="notifications-label">new updates</span></a>
+          <a class="view-assignments" href="/jcs/student/classes/36100">view all assignments</a>
+        </div>
+
+        <div class="course-content">
+        </div>
+
+      </li>
+      <li data-status="active">
+        <div class="course">
+          <div class="title">
+
+              <a title="view class website" class="class-name" href="/jcs/course/1777/website">Free Mod-271</a>
+
+            <span class="teacher-name">Mr. Wilson</span>
+
+          </div>
+
+          <div class="meeting-time">
+            <span class="no-meeting-time"><i class="fa fa-clock-o"></i> not scheduled today</span>
+          </div>
+
+          <div class="links">
+              <a title="view class website" class="class-link class-website" href="/jcs/course/1777/website">website</a> &middot;
+              <a class="class-link class-assignments" href="/jcs/course/1777/website/calendar">calendar</a> &middot;
+              <a class="class-link class-directory" href="/jcs/course/1777/website/directory">directory</a>
+          </div>
+
+        </div>
+
+        <div class="course-notifications">
+          <span class="hide-grade">&nbsp;</span>
+          <a class="notifications no-notifications" title="view assignment updates" href="/jcs/student/classes/40286?filter=updates"><span class="notifications-count">0</span><span class="notifications-label">new updates</span></a>
+          <a class="view-assignments" href="/jcs/student/classes/40286">view all assignments</a>
+        </div>
+
+        <div class="course-content">
+        </div>
+
+      </li>
+      <li data-status="past">
+        <div class="course">
+          <div class="title">
+
+              <a title="view class website" class="class-name" href="/jcs/course/1328/website">Free Mod-121</a>
+
+            <span class="teacher-name">Mr. Wilson</span>
+
+          </div>
+
+          <div class="meeting-time">
+            <span class="no-meeting-time"><i class="fa fa-clock-o"></i> not scheduled today</span>
+          </div>
+
+          <div class="links">
+              <a title="view class website" class="class-link class-website" href="/jcs/course/1328/website">website</a> &middot;
+              <a class="class-link class-assignments" href="/jcs/course/1328/website/calendar">calendar</a> &middot;
+              <a class="class-link class-directory" href="/jcs/course/1328/website/directory">directory</a>
+          </div>
+
+        </div>
+
+        <div class="course-notifications">
+          <span class="hide-grade">&nbsp;</span>
+          <a class="notifications no-notifications" title="view assignment updates" href="/jcs/student/classes/40285?filter=updates"><span class="notifications-count">0</span><span class="notifications-label">new updates</span></a>
+          <a class="view-assignments" href="/jcs/student/classes/40285">view all assignments</a>
+        </div>
+
+        <div class="course-content">
+        </div>
+
+      </li>
+
+    </ul>
+
+
+</div>
+
+          </div>
+
+        </div>
+
+        <div id="activity" class="tab-panel">
+          <ul class="feed"></ul>
+
+<p id="feed-status" style="display:none;">No updates matched your filter criteria.</p>
+<a id="load-more" href="#">Load More Updates</a>
+
+<p id='activity-loading'><img src="/assets/spinner-11cb0d2487b625f222d62a2674e30f309f08111e905bdaa9cae18d092943d289.gif" alt="Spinner" /> Loading...</p>
+
+        </div>
+
+        <div id="reports" class="tab-panel">
+          <div class="attendance report">
+  <h5>Attendance</h5>
+  <a target="_blank" href="https://documents.veracross.com/jcs/attendance/16357?grading_period=2&key=F718RzFiqRGvEv2O2zmDW3-bkJ20mmlMOep1cXTKEDQq1KzP0z-DUnCFh6JLBFexFL5mvaDqwKqTN2XP_69Z-leZqOtgvIXZhQFsYS_Wz3Iijw9MhcqwK7bbUK6pyV8I2XyctsiijClC_2-_IM2NjYSyRQmVh6m0-uVqdtz6oyq0VQko3oAiy7XdTJMtT_7p3K6iJttQ5yPrR1pnnHKqYQ==">Quarter 1</a> &#183; <a target="_blank" href="https://documents.veracross.com/jcs/attendance/16357?grading_period=4&key=F718RzFiqRGvEv2O2zmDW3-bkJ20mmlMOep1cXTKEDQq1KzP0z-DUnCFh6JLBFexFL5mvaDqwKqTN2XP_69Z-leZqOtgvIXZhQFsYS_Wz3Iijw9MhcqwK7bbUK6pyV8I2XyctsiijClC_2-_IM2NjYSyRQmVh6m0-uVqdtz6oyq0VQko3oAiy7XdTJMtT_7p3K6iJttQ5yPrR1pnnHKqYQ==">Quarter 2</a> &#183; <a target="_blank" href="https://documents.veracross.com/jcs/attendance/16357?grading_period=8&key=F718RzFiqRGvEv2O2zmDW3-bkJ20mmlMOep1cXTKEDQq1KzP0z-DUnCFh6JLBFexFL5mvaDqwKqTN2XP_69Z-leZqOtgvIXZhQFsYS_Wz3Iijw9MhcqwK7bbUK6pyV8I2XyctsiijClC_2-_IM2NjYSyRQmVh6m0-uVqdtz6oyq0VQko3oAiy7XdTJMtT_7p3K6iJttQ5yPrR1pnnHKqYQ==">Quarter 3</a> &#183; <span>Quarter 4</span>
+</div>
+
+
+<div class="report-cards report">
+  <h5>Report Cards</h5>
+  <a target="_blank" href="https://documents.veracross.com/jcs/report_card/867?grading_period=2&key=F718RzFiqRGvEv2O2zmDW20KP6sMlNSV2SJI-xwDrmcPXHrK4582v7cjS9JRI8InvXa6IzaV_aY5ZwbuRXP2fmSmWiPXXksjLFcBzuWvTLvjjijQuvHaKe4Uc00Vt2-Ynbv10EEJiMRK1U7h_e-IcjbDLzJd1yJvvuOcR8mdj58GdlDHOjkM5epL33AhCCw9">Quarter 1</a> &#183; <a target="_blank" href="https://documents.veracross.com/jcs/report_card/867?grading_period=4&key=F718RzFiqRGvEv2O2zmDW20KP6sMlNSV2SJI-xwDrmcPXHrK4582v7cjS9JRI8InvXa6IzaV_aY5ZwbuRXP2fmSmWiPXXksjLFcBzuWvTLvjjijQuvHaKe4Uc00Vt2-Ynbv10EEJiMRK1U7h_e-IcjbDLzJd1yJvvuOcR8mdj58GdlDHOjkM5epL33AhCCw9">Quarter 2</a> &#183; <span>Quarter 3</span> &#183; <span>Quarter 4</span>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    <div id="overlay"></div>
+  </body>
+</html>
